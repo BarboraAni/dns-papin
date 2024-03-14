@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dns_papin"
+version = "0.1.0"
+description = "A tool for generating DNS traffic to test DNS servers under load"
+authors = ["Barbora Ani <b.ani@email.cz>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.6.3"
+confuse = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

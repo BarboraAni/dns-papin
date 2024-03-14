@@ -1,0 +1,5 @@
+target: "localhost"
+port: 53
+file: "examples.txt"
+delimiter: ","
+thread_count: 100

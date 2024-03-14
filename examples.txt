@@ -1,0 +1,2 @@
+google.com,A
+volny.cz,AAAA

@@ -1,0 +1,51 @@
+from enum import IntEnum
+
+
+class DnsRecordType(IntEnum):
+    A = 1  # RFC 1035[1] Address record
+    AAAA = 28  # RFC 3596[2] IPv6 address record
+    AFSDB = 18  # RFC 1183 AFS database record
+    APL = 42  # RFC 3123 Address Prefix List
+    CAA = 257  # RFC 6844 Certification Authority Authorization
+    CDNSKEY = 60  # RFC 7344 Child copy of DNSKEY record, for transfer to parent
+    CDS = 59  # RFC 7344 Child DS
+    CERT = 37  # RFC 4398 Certificate record
+    CNAME = 5  # RFC 1035[1] Canonical name record
+    CSYNC = 62  # RFC 7477 Child-to-Parent Synchronization
+    DHCID = 49  # RFC 4701 DHCP identifier
+    DLV = 32769  # RFC 4431 DNSSEC Lookaside Validation record
+    DNAME = 39  # RFC 6672 Delegation name record
+    DNSKEY = 48  # RFC 4034 DNS Key record
+    DS = 43  # RFC 4034 Delegation signer
+    EUI48 = 108  # RFC 7043 MAC address (EUI-48)
+    EUI64 = 109  # RFC 7043 MAC address (EUI-64)
+    HINFO = 13  # RFC 8482 Host Information
+    HIP = 55  # RFC 8005 Host Identity Protocol
+    HTTPS = 65  # RFC 9460 HTTPS Binding
+    IPSECKEY = 45  # RFC 4025 IPsec Key
+    KEY = 25  # RFC 2535[3] and RFC 2930[4] Key record
+    KX = 36  # RFC 2230 Key Exchanger record
+    LOC = 29  # RFC 1876 Location record
+    MX = 15  # RFC 1035[1] and RFC 7505 Mail exchange record
+    NAPTR = 35  # RFC 3403 Naming Authority Pointer
+    NS = 2  # RFC 1035[1] Name server record
+    NSEC = 47  # RFC 4034 Next Secure record
+    NSEC3 = 50  # RFC 5155 Next Secure record version 3
+    NSEC3PARAM = 51  # RFC 5155 NSEC3 parameters
+    OPENPGPKEY = 61  # RFC 7929 OpenPGP public key record
+    PTR = 12  # RFC 1035[1] PTR Resource Record [de]
+    RP = 17  # RFC 1183 Responsible Person
+    RRSIG = 46  # RFC 4034 DNSSEC signature
+    SIG = 24  # RFC 2535 Signature
+    SMIMEA = 53  # RFC 8162[9] S/MIME cert association[10]
+    SOA = 6  # RFC 1035[1] and RFC 2308[11] Start of [a zone of] authority record
+    SRV = 33  # RFC 2782 Service locator
+    SSHFP = 44  # RFC 4255 SSH Public Key Fingerprint
+    SVCB = 64  # RFC 9460 Service Binding
+    TA = 32768  # DNSSEC Trust Authorities
+    TKEY = 249  # RFC 2930 Transaction Key record
+    TLSA = 52  # RFC 6698 TLSA certificate association
+    TSIG = 250  # RFC 2845 Transaction Signature
+    TXT = 16  # RFC 1035[1] Text record
+    URI = 256  # RFC 7553 Uniform Resource Identifier
+    ZONEMD = 63  # RFC 8976 Message Digests for DNS Zones
